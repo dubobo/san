@@ -1,0 +1,284 @@
+/*导航栏*/
+header {
+    width: 100%;
+    margin: auto;
+    background-color: rgb(40,40,48);
+    z-index: 1001;
+    position: relative;
+}
+
+/*logo*/
+.logo {
+    width: 180px;
+}
+
+/*公司名*/
+.company_name {
+    color: #fff;
+    line-height:90px;    /*撑起导航栏高度*/
+}
+/*导航栏选项居右*/
+.nav {
+    background-color: rgb(40,40,48);
+}
+
+.nav li a {
+    margin: 0 !important;
+}
+
+/*导航栏选项收起后对齐*/
+.showhide {
+    margin-left: 20px !important;
+}
+
+/*企业服务下四大版块*/
+.service-nav {
+    position: relative;
+}
+
+.subservice-nav {
+    width: 140px;
+    background-color: rgb(40,40,48);
+    display: none;
+    position: absolute;
+}
+
+.subservice-nav li {
+    border-top: 1px solid grey;
+}
+
+.subservice-nav li a {
+    color: #fff !important;
+    line-height: 50px !important;
+    padding-left: 20px;
+}
+
+.subservice-nav li:hover {
+    background-color: rgb(11,144,196);
+}
+
+.service-nav:hover .subservice-nav {
+    display: block;
+}
+
+/*展子导航栏*/
+.zhan-nav {
+    width: 140px;
+    background-color: rgb(40,40,48);
+    border-left: 1px solid rgb(40,40,48);
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 51px;
+    left: 140px;
+}
+
+.zhan-nav li a {
+    padding-left: 0;
+}
+
+.zhan:hover .zhan-nav{
+    display: block;
+}
+
+/*底层背景图*/
+.top-bgimg {
+    width: 100%;
+    height: 400px;
+    background-image: url("../../img/bgimg/zhan.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.cover-top-bgimg {
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0,0,0,.4);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align:center;
+}
+
+.cover-title {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 40px;
+    padding-top: 200px;
+}
+
+/*文字描述*/
+.descript{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+/*多媒体设计*/
+/*title*/
+.subtitle {
+    border-top: 1px solid gainsboro;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+.mul-img1 {
+    height: 500px;
+    background: url("../../img/resource/zhan3.jpg") no-repeat;
+    background-size: cover;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.mul-img2 {
+    height: 220px;
+    background: url("../../img/resource/zhan1.jpg") no-repeat;
+    background-size:cover;
+    padding: 0;
+    cursor: pointer;
+}
+
+.mul-img3 {
+    height: 280px;
+    background: url("../../img/resource/zhan2.jpg") no-repeat;
+    background-size:cover;
+    padding: 0;
+    cursor: pointer;
+}
+
+/*图片覆盖层*/
+.cover-mul1, .cover-mul2, .cover-mul3 {
+    position: absolute;
+    padding: 0;
+    background-color: rgba(0,0,0,.5);
+    opacity: 0;
+}
+
+/*覆盖层文字*/
+.cover-mul-text {
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+.cover-mul-text p {
+    margin-top: 20px;
+    color: #FFF;
+    text-indent: 2em;
+}
+
+/*图标*/
+.icon1 {
+    font-size: 60px;
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+}
+
+.icon2 {
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+}
+
+/*数字平台建设*/
+/*文字介绍*/
+.num, .wisdom {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+.lower-content h3 {
+    color: #4A89DC;
+}
+
+/*轮播图*/
+.slide{
+    width: 100%;
+    min-height: 180px;
+    overflow: hidden;
+    position: relative;
+
+}
+.slide .img{
+    overflow: hidden;
+    position: absolute;
+    transition: width 0.4s,height 0.4s,top 0.4s,left 0.4s,z-index 0.4s;
+}
+.slide .img img{
+    width: calc(100% - 14px);
+    height: calc(100% - 14px);
+    margin: 7px;
+}
+.slide .img1{
+    width: 40%;
+    height: 40%;
+    top: 30%;
+    left: -50%;
+    z-index: 1;
+}
+.slide .img2{
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: -20%;
+    z-index: 2;
+}
+.slide .img3{
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    z-index: 3;
+}
+.slide .img4{
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: 60%;
+    z-index: 2;
+}
+.slide .img5{
+    width: 40%;
+    height: 40%;
+    top: 30%;
+    left: 110%;
+    z-index: 1;
+}
+.slide-bt{
+    position: absolute;
+    left: 50%;
+    bottom: 13%;
+    z-index: 10;
+}
+.slide-bt span{
+    width: 24px;
+    height: 8px;
+    background: #c9caca;
+    float: left;
+    margin: 5px;
+    border-radius: 4px;
+}
+.slide .slide-bt .on{
+    background: #0f3e68;
+}
+button{
+    width: 50px;
+    margin: 20px;
+}

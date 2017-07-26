@@ -1,0 +1,142 @@
+/*导航栏*/
+header {
+    width: 100%;
+    margin: auto;
+    background-color: rgb(40,40,48);
+    z-index: 1001;
+    position: relative;
+}
+
+/*logo*/
+.logo {
+    width: 180px;
+}
+
+/*公司名*/
+.company_name {
+    color: #fff;
+    line-height:90px;    /*撑起导航栏高度*/
+}
+/*导航栏选项居右*/
+.nav {
+    background-color: rgb(40,40,48);
+}
+
+.nav li a {
+    margin: 0 !important;
+}
+
+/*导航栏选项收起后对齐*/
+.showhide {
+    margin-left: 20px !important;
+}
+
+/*企业服务下四大版块*/
+.service-nav {
+    position: relative;
+}
+
+.subservice-nav {
+    width: 140px;
+    background-color: rgb(40,40,48);
+    display: none;
+    position: absolute;
+}
+
+.subservice-nav li {
+    border-top: 1px solid grey;
+}
+
+.subservice-nav li a {
+    color: #fff !important;
+    line-height: 50px !important;
+    padding-left: 20px;
+}
+
+.subservice-nav li:hover {
+    background-color: rgb(11,144,196);
+}
+
+.service-nav:hover .subservice-nav {
+    display: block;
+}
+
+/*展子导航栏*/
+.zhan-nav {
+    width: 140px;
+    background-color: rgb(40,40,48);
+    border-left: 1px solid rgb(40,40,48);
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 51px;
+    left: 140px;
+}
+
+.zhan-nav li a {
+    padding-left: 0;
+}
+
+.zhan:hover .zhan-nav{
+    display: block;
+}
+
+/*content*/
+.title {
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+.title span {
+    letter-spacing: 1px;
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;;
+    text-transform: uppercase;
+    color: #26373d;
+    text-shadow: 0 8px 9px #000, 0px -2px 1px #999;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    background: linear-gradient(to bottom, #26373d 0%,#26373d 100%);
+}
+
+/*content text*/
+.content {
+    border-bottom: 1px solid beige;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+}
+
+.content p {
+    padding-left: 15%;
+    padding-right: 15%;
+    text-indent: 1.5em;
+}
+
+/*content img*/
+.vr div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.subvr-name {
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+.vr-name h2{
+    width: 272px;
+    color: gainsboro;
+    border: 2px solid #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.vr p {
+    font-size: 30px;
+    padding: 15px 0 15px;
+}
+
+

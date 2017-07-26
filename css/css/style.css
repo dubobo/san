@@ -1,0 +1,86 @@
+/* ---------------------Reset----------------------- */
+a,abbr,acronym,address,applet,article,aside,audio,b,blockquote,big,body,center,canvas,caption,cite,code,command,datalist,dd,del,details,dfn,dl,div,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,keygen,label,legend,li,meter,nav,object,ol,output,p,pre,progress,q,s,samp,section,small,span,source,strike,strong,sub,sup,table,tbody,tfoot,thead,th,tr,tdvideo,tt,u,ul,var{background:transparent;border:0 none;font-size:100%;margin:0;padding:0;border:0;outline:0;vertical-align:top;}ol, ul {list-style:none;}blockquote, q {quotes:none;}table, table td {padding:0;border:none;border-collapse:collapse;}img {vertical-align:top;}embed {vertical-align:top;}
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block;}
+mark, rp, rt, ruby, summary, time {display:inline;}
+input, textarea {border:0; padding:0; margin:0; outline: 0;}
+iframe {border:0; margin:0; padding:0;}
+input, textarea, select {margin:0; padding:0px;}
+
+/* -------------------------------------------- */
+/* ------------------Font---------------------- */
+/* -------------------------------------------- */
+@font-face {
+font-family: 'BebasNeueRegular';
+font-weight: normal;
+font-style: normal;
+}
+/* -------------------------------------------- */
+/* ------------------Style---------------------- */
+/* -------------------------------------------- */
+html, body {width:100%; padding:0; margin:0;}
+
+/*-------------------------*/
+a{color: #392E2B;text-decoration: none;}
+a:hover {text-decoration: none;}
+
+a.button, input.button {	cursor: pointer;	color: #808080;	line-height: 12px;	font-family: Arial, Helvetica, sans-serif;	font-size: 12px;	font-weight: bold;	background: #E4E4E4;	border:1px solid #DFDFDF;}
+a.button {	display: inline-block;	text-decoration: none;	padding: 6px 12px 6px 12px;}
+input.button {	margin: 0;	border: 0;	height: 24px;	padding: 0px 12px 0px 12px;}
+a.button:hover, input.button:hover {background: #392E2B;color:#ffffff;}
+
+/*-------------content */
+
+
+.block {padding: 5px 0px;background:#ffffff;}
+
+.main-content{}
+.main-content article{margin: 20px 0;overflow:hidden; position:relative; background-color:#FAFAFA;padding:10px;border:1px solid #DDDDDD;
+    -webkit-box-shadow: 0 0 10px #ddd;
+    -moz-box-shadow: 0 0 10px #ddd;
+    box-shadow: 0 0 10px #ddd;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+.main-content article:hover{
+
+    -webkit-box-shadow: 10px 10px 10px #8e8e8e;
+    -moz-box-shadow: 10px 10px 10px #8e8e8e;
+    box-shadow: 10px 10px 10px #8e8e8e;
+    background-color:rgb(253,253,253);
+
+}
+.main-content article a,p{
+    color:#000;
+}
+.main-content .heading h2{font-family: 'BebasNeueRegular'; font-size:25px; line-height:25px; text-transform:uppercase; font-weight:normal;}
+.main-content .heading .info{font-size:12px; padding:0px 10px; border-top:1px solid #DDDDDD;border-bottom:1px solid #DDDDDD;}
+.main-content .content{}
+.main-content .content img{float:left; margin:3px 30px 0px 0; border:#BDBDBD 5px solid;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;}
+.main-content .content img:hover{
+    -webkit-box-shadow: 0 0 20px #272727;
+    -moz-box-shadow: 0 0 20px #272727;
+    box-shadow: 0 0 20px #272727;
+    border:4px solid #fff;
+}
+.main-content .footer{}
+.main-content .footer .more{float:right;}
+.main-content .footer .more a{ text-decoration:none;}
+
+.sidebar section{margin-bottom: 20px;}
+.sidebar .heading{font-family: 'BebasNeueRegular';color:#ffffff; background:#392E2B; font-size:22px; text-transform:uppercase; padding: 12px 20px 9px 20px;}
+.sidebar .content{padding:15px;background-color:#FAFAFA; border:1px solid #DDDDDD;}
+.sidebar .content img{float:left; margin:5px; border:#BDBDBD 5px solid;}
+.featured{width:100%; margin-bottom: 20px;}
+
+ul {margin:0; padding:0;list-style-image:none;}
+ul.list li {padding:0px 0 5px 12px; line-height:25px; background:url(../../img/service/images/marker-1.gif) 0 11px no-repeat;}
+ul.list li a { font-size:14px; color:#555555; line-height:25px;}
+ul.list li a:hover {color:#C9B5AF; text-decoration:none;}

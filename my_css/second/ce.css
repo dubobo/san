@@ -1,0 +1,232 @@
+html,body,header,section,footer,nav,div,h1,h2,h3,h4,h5,h6,ul,li,p,span,br,button {
+    margin: 0;
+    padding: 0;
+}
+/*导航栏*/
+header {
+    width: 100%;
+    margin: auto;
+    background-color: rgb(40,40,48);
+    z-index: 1001;
+    position: relative;
+}
+
+/*logo*/
+.logo {
+    width: 180px;
+}
+
+/*公司名*/
+.company_name {
+    color: #fff;
+    line-height:90px;    /*撑起导航栏高度*/
+}
+/*导航栏选项居右*/
+.nav {
+    background-color: rgb(40,40,48);
+}
+
+.nav li a {
+    margin: 0 !important;
+}
+
+/*导航栏选项收起后对齐*/
+.showhide {
+    margin-left: 20px !important;
+}
+
+/*企业服务下四大版块*/
+.service-nav {
+    position: relative;
+}
+
+.subservice-nav {
+    width: 140px;
+    background-color: rgb(40,40,48);
+    display: none;
+    position: absolute;
+}
+
+.subservice-nav li {
+    border-top: 1px solid grey;
+}
+
+.subservice-nav li a {
+    color: #fff !important;
+    line-height: 50px !important;
+    padding-left: 20px;
+}
+
+.subservice-nav li:hover {
+    background-color: rgb(11,144,196);
+}
+
+.service-nav:hover .subservice-nav {
+    display: block;
+}
+
+/*展子导航栏*/
+.zhan-nav {
+    width: 140px;
+    background-color: rgb(40,40,48);
+    border-left: 1px solid rgb(40,40,48);
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 51px;
+    left: 140px;
+}
+
+.zhan-nav li a {
+    padding-left: 0;
+}
+
+.zhan:hover .zhan-nav{
+    display: block;
+}
+
+/*底层背景图*/
+.top-bgimg {
+    width: 100%;
+    height: 400px;
+    background-image: url("../../img/bgimg/ce.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.cover-top-bgimg {
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0,0,0,.4);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align:center;
+}
+
+.cover-title {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 400px;
+}
+
+/*指导思想*/
+.think-box {
+    background-color: #26373d;
+    border-top: 1px solid #fff;
+}
+
+.think-img {
+    margin-bottom: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 15px;
+    box-shadow: 0 0 8px rgba(0,0,0,.5);
+}
+
+.think-img img {
+    min-height: 300px;
+    border-radius: 15px;
+}
+
+.think {
+    padding-left: 10%;
+}
+
+/*正方形*/
+.rectangular {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin-left: 100px;
+    border: 2px solid #1c2b36;
+    background-color: #fff;
+    transform: rotateZ(45deg);
+    cursor:pointer;
+}
+
+.rectangular p, .rectangular h4 {
+    line-height: 100px;
+    transform: rotateZ(-45deg);
+}
+
+/*公共文化*/
+/*title*/
+.culture-title {
+    border-top: 1px solid gainsboro;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+.mul-img {
+    padding: 0;
+    height: 280px;
+}
+
+.mul-img1 {
+    background: url("../../img/resource/ce2.png") no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.mul-img2 {
+    background: url("../../img/resource/ce3.png") no-repeat;
+    background-size:cover;
+    cursor: pointer;
+}
+
+.mul-img3 {
+    background: url("../../img/resource/ce4.png") no-repeat;
+    background-size:cover;
+    cursor: pointer;
+}
+
+/*图片覆盖层*/
+.cover-mul {
+    text-align: center;
+    position: absolute;
+    padding: 0;
+    background-color: rgba(0,0,0,.5);
+    opacity: 0;
+}
+
+.cover-mul h3 {
+    line-height: 280px;
+}
+
+.sub-cover-mul1, .sub-cover-mul2, .sub-cover-mul3 {
+    height: 280px;
+    position: absolute;
+    padding: 0;
+    background-color: rgba(0,0,0,.5);
+}
+
+/*覆盖层文字*/
+.sub-cover-mul1 {
+    color: #fff;
+    padding: 15px 0 15px;
+}
+
+/*背景色覆盖层*/
+.cover-text1, .cover-text2, .cover-text3 {
+    padding: 0 30px 0;
+}
+
+.cover-text1 h4, .cover-text2 h4 {
+    line-height: 40px;
+}
+
+/*农村电商*/
+.rural-title {
+    color: #000;
+    border-top: 1px solid gainsboro;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+

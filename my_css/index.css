@@ -1,0 +1,308 @@
+/*导航栏*/
+header {
+    width: 100%;
+    margin: auto;
+    background-color: transparent;
+    z-index: 1001;
+    position: relative;
+}
+
+/*logo*/
+.logo {
+    width: 180px;
+}
+
+/*公司名*/
+.company_name {
+    color: #fff;
+    line-height:90px;    /*撑起导航栏高度*/
+}
+/*导航栏选项居右*/
+.nav {
+    background-color: transparent;
+}
+
+.nav li a {
+    margin: 0 !important;
+}
+
+/*导航栏选项收起后对齐*/
+.showhide {
+    margin-left: 20px !important;
+    margin-top: 15px !important;
+}
+
+/*企业服务下四大版块*/
+.service-nav {
+    position: relative;
+}
+
+.subservice-nav {
+    width: 140px;
+    background-color: rgba(40,40,48,.7);
+    display: none;
+    position: absolute;
+}
+
+.subservice-nav li {
+    border-top: 1px solid grey;
+}
+
+.subservice-nav li a {
+    color: #fff !important;
+    line-height: 50px !important;
+    padding-left: 20px;
+}
+
+.subservice-nav li:hover {
+    background-color: rgb(11,144,196);
+}
+
+.service-nav:hover .subservice-nav {
+    display: block;
+}
+
+/*展子导航栏*/
+.zhan-nav {
+    width: 140px;
+    background-color: rgba(40,40,48,.7);
+    border-left: 1px solid rgb(40,40,48);
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 51px;
+    left: 140px;
+}
+
+.zhan-nav li a {
+    padding-left: 0;
+}
+
+.zhan:hover .zhan-nav{
+    display: block;
+}
+
+/*content*/
+
+/*首页内容*/
+/*视频背景*/
+.video {
+    object-fit: fill;
+    width:100%;
+    position: absolute;
+    top:0;
+}
+
+/*了解更多*/
+.cover-video-more {
+    width: 200px;
+    height: 40px;
+    color: #1c2b36;
+    margin: auto;
+    border: 2px solid #0B90C4;
+    position: relative;
+    top: 78%;
+}
+
+/*向下图标*/
+.down {
+    width: 70px;
+    height: 70px;
+    opacity: 0.6;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 72%;
+    animation: down 1.2s infinite linear ;
+}
+
+@keyframes  down {
+    0% {
+        top: 77%;
+    }
+    50% {
+        top: 79%;
+    }
+    100% {
+        top: 77%;
+    }
+}
+
+@-webkit-keyframes  down {
+    0% {
+        top: 77%;
+    }
+    50% {
+        top: 79%;
+    }
+    100% {
+        top: 77%;
+    }
+}
+
+@-moz-keyframes  down {
+    0% {
+        top: 77%;
+    }
+    50% {
+        top: 79%;
+    }
+    100% {
+        top: 77%;
+    }
+}
+
+@-o-keyframes  down {
+    0% {
+        top: 77%;
+    }
+    50% {
+        top: 79%;
+    }
+    100% {
+        top: 77%;
+    }
+}
+
+/*隐藏模板左右切换按钮*/
+.tp-leftarrow, .tp-rightarrow {
+    display: none;
+}
+
+/*核心服务图片*/
+.article_core1, .article_core2, .article_core3, .article_core4 {
+    opacity: 0;
+}
+
+.icon_box {
+    text-align: center;
+    box-shadow: 0 0 8px rgba(0,0,0,.1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.icon_box:hover {
+    -webkit-box-shadow: 0 0 8px rgba(0,0,0,.4);
+    -moz-box-shadow: 0 0 8px rgba(0,0,0,.4);
+    box-shadow: 0 0 8px rgba(0,0,0,.4);
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1)
+}
+
+.icon_box:hover:after {
+    opacity: 1;
+}
+
+/*核心业务文字*/
+.core-modul {
+    text-align: center;
+}
+
+.core-modul p {
+    padding: 20px 0 10px;
+    font-size: 18px;
+    color: #000;
+}
+
+/*提供服务icon颜色*/
+.fa-angle-left, .fa-angle-right {
+    color: #fff;
+}
+
+
+/*虚拟现实*/
+/*title*/
+.vr-title h2 {
+    border-top: 1px solid gainsboro;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+/*img*/
+.vr-mul {
+    padding: 0;
+    height: 280px;
+}
+
+.mul-img1 {
+    background: url("../img/bgimg/vr.jpg") no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.mul-img2 {
+    background: url("../img/bgimg/ar.jpg") no-repeat;
+    background-size:cover;
+    cursor: pointer;
+}
+
+.mul-img3 {
+    background: url("../img/bgimg/mr.jpg") no-repeat;
+    background-size:cover;
+    cursor: pointer;
+}
+
+/*图片覆盖层*/
+.cover-mul{
+    text-align: center;
+    position: absolute;
+    padding: 0;
+    background-color: rgba(0,0,0,.5);
+    opacity: 0;
+}
+
+/*图片覆盖层文字*/
+.cover-mul h3 {
+    color: #fff;
+    line-height:280px;
+}
+
+/*背景色覆盖层*/
+.sub-cover-mul1, .sub-cover-mul2, .sub-cover-mul3 {
+    height: 280px;
+    position: absolute;
+    padding: 0;
+    background-color: rgba(0,0,0,.5);
+}
+
+/*背景色覆盖层title*/
+.sub-cover-mul1>h3, .sub-cover-mul2>h3, .sub-cover-mul3>h3 {
+    color: #fff;
+    padding: 15px 30px 10px;
+}
+
+.cover-text1, .cover-text2, .cover-text3 {
+    padding: 0 30px 0;
+}
+
+.cover-text1 h4, .cover-text2 h4 {
+    padding-bottom: 10px;
+}
+
+/*联系方式版块*/
+#connect-us {
+    width: 260px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.contact-info {
+    text-align: center;
+    background-color: rgba(255,255,255,.2);
+}
+
+#connect-us li {
+    margin-bottom: 27px;
+    font-weight: 500;
+}
+
+#connect-us span {
+    color: #fff;
+}
+
+/*联系方式版块背景图*/
+.under_bgimg {
+    width: 100%;
+    height: 446px;
+    background-image: url('../img/bgimg/index.jpg');
+}

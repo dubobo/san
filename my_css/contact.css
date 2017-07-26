@@ -1,0 +1,161 @@
+/*导航栏*/
+header {
+    width: 100%;
+    margin: auto;
+    background-color: rgb(40,40,48);
+    z-index: 1001;
+    position: relative;
+}
+
+/*logo*/
+.logo {
+    width: 180px;
+}
+
+/*公司名*/
+.company_name {
+    color: #fff;
+    line-height:90px;    /*撑起导航栏高度*/
+}
+/*导航栏选项居右*/
+.nav {
+    background-color: rgb(40,40,48);
+}
+
+.nav li a {
+    margin: 0 !important;
+}
+
+/*导航栏选项收起后对齐*/
+.showhide {
+    margin-left: 20px !important;
+}
+
+/*企业服务下四大版块*/
+.service-nav {
+    position: relative;
+}
+
+.subservice-nav {
+    width: 140px;
+    background-color: rgb(40,40,48);
+    display: none;
+    position: absolute;
+}
+
+.subservice-nav li {
+    border-top: 1px solid grey;
+}
+
+.subservice-nav li a {
+    color: #fff !important;
+    line-height: 50px !important;
+    padding-left: 20px;
+}
+
+.subservice-nav li:hover {
+    background-color: rgb(11,144,196);
+}
+
+.service-nav:hover .subservice-nav {
+    display: block;
+}
+
+/*展子导航栏*/
+.zhan-nav {
+    width: 140px;
+    background-color: rgb(40,40,48);
+    border-left: 1px solid rgb(40,40,48);
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 51px;
+    left: 140px;
+}
+
+.zhan-nav li a {
+    padding-left: 0;
+}
+
+.zhan:hover .zhan-nav{
+    display: block;
+}
+
+/*底层背景图*/
+.top-bgimg {
+    width: 100%;
+    height: 400px;
+    background-image: url("../img/bgimg/contact.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.cover-top-bgimg {
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0,0,0,.4);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align:center;
+}
+
+.cover-top-bgimg p {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 600;
+    padding-top: 200px;
+}
+
+/*联系方式*/
+.contact_us {
+    margin-top: 50px;
+}
+
+.inform-box {
+    height: 488px;
+    background-color: #e9dfd1;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+/*公司title*/
+.company-title {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.company-title span {
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;;
+    text-transform: uppercase;
+    color: #f1ebe5;
+    padding-left: 70px;
+    text-shadow: 0 8px 9px #666, 0 -2px 1px #fff;
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: -4px;
+    text-align: center;
+    background: linear-gradient(to bottom, #ece4d9 0%,#e9dfd1 100%);
+}
+
+.company-info {
+    margin-top: 40px;
+}
+
+.company-info p{
+    color: grey;
+    margin-bottom: 20px;
+    padding-left: 70px;
+}
+
+/*about company*/
+.about-company {
+    margin-top: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+}

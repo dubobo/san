@@ -1,0 +1,94 @@
+/*
+* Zerogrid V1.0
+* Copyright 2012, Kimmy | wwww.zerotheme.com
+*/
+
+/*--------------Table of Contents
+    #Base 960 Grid
+    #Tablet (Portrait)
+    #Mobile (Portrait)
+    #Mobile (Landscape)
+*/
+/*--------------Base 960 Grid*/
+    .zerogrid { position: relative; width: 1140px; margin: 0 auto; padding: 0;}
+    .zerogrid .row { margin-bottom: 10px;}
+	/*.zerogrid .col05,.zerogrid .col11{ float: left; display: inline; margin:10px;}*/
+    .zerogrid .col05,.zerogrid .col11{display: inline; margin:10px;}
+    /* Base Grid */
+
+    .zerogrid .col05 { width: 280px; }
+    .zerogrid .col11 { width: 1140px;}
+
+/*--------------Tablet (Portrait)*/
+
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width: 800px) and (max-width: 1210px) {
+        .zerogrid { width: 768px; }
+		.zerogrid .col05,.zerogrid .col11{ margin: 10px;}
+        .zerogrid .col05 { width: 220px; }
+        .zerogrid .col11 { width: 768px; }
+    }
+
+
+
+
+/*--------------Mobile (Landscape)*/
+
+    /* Note: Design for a width of 420px */
+
+    @media only screen and (min-width: 480px) and (max-width: 799px) {
+        .zerogrid { width: 420px; }
+        .zerogrid .col05.zerogrid .col11{margin: 10px 0; }
+        .zerogrid .col05,
+        .zerogrid .col11{ width: 420px; }
+    }
+
+/*--------------Mobile (Portrait)*/
+
+/* Note: Design for a width of 260px */
+
+@media only screen and (min-width: 310px) and (max-width: 480px) {
+    .zerogrid { width: 260px; }
+    .zerogrid .col05,.zerogrid .col11{margin: 10px 0; }
+    .zerogrid .col05,
+    .zerogrid .col11 { width: 260px; }
+}
+
+/*--------------Mobile (Portrait)*/
+
+/* Note: Design for a width of 220px */
+
+@media only screen and (max-width: 310px) {
+    .zerogrid { width: 220px; }
+    .zerogrid .col05,.zerogrid .col11{margin: 10px 0; }
+    .zerogrid .col05,
+    .zerogrid .col11 { width: 220px; }
+}
+/* #Clearing
+================================================== */
+
+/* Self Clearing Goodness */
+.zerogrid:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Use clearfix class on parent to clear nested columns,
+or wrap each row of columns in a <div class="row"> */
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.row:after,
+.clearfix:after {
+    clear: both;
+}
+.row,
+.clearfix {
+    zoom: 1;
+}
