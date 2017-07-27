@@ -1,0 +1,130 @@
+/*导航栏*/
+header {
+    width: 100%;
+    margin: auto;
+    background-color: rgb(40,40,48);
+    z-index: 1001;
+    position: relative;
+}
+
+/*logo*/
+.logo {
+    width: 180px;
+}
+
+/*公司名*/
+.company_name {
+    color: #fff;
+    line-height:90px;    /*撑起导航栏高度*/
+}
+/*导航栏选项居右*/
+.nav {
+    background-color: rgb(40,40,48);
+}
+
+.nav li a {
+    margin: 0 !important;
+}
+
+/*导航栏选项收起后对齐*/
+.showhide {
+    margin-left: 20px !important;
+}
+
+/*企业服务下四大版块*/
+.service-nav {
+    position: relative;
+}
+
+.subservice-nav {
+    width: 140px;
+    background-color: rgb(40,40,48);
+    display: none;
+    position: absolute;
+}
+
+.subservice-nav li {
+    border-top: 1px solid grey;
+}
+
+.subservice-nav li a {
+    color: #fff !important;
+    line-height: 50px !important;
+    padding-left: 20px;
+}
+
+.subservice-nav li:hover {
+    background-color: rgb(11,144,196);
+}
+
+.service-nav:hover .subservice-nav {
+    display: block;
+}
+
+/*展子导航栏*/
+.zhan-nav {
+    width: 140px;
+    background-color: rgb(40,40,48);
+    border-left: 1px solid rgb(40,40,48);
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 51px;
+    left: 140px;
+}
+
+.zhan-nav li a {
+    padding-left: 0;
+}
+
+.zhan:hover .zhan-nav{
+    display: block;
+}
+
+.default-section .jianjie{
+    font-size:18px;
+    color:#333;
+    padding:0 0 10px 0;
+}
+
+/*产业合作*/
+.
+
+
+/*校企合作*/
+.single-team-member{
+    width:100%;
+}
+
+.single-team-member .img-box .xiao1{
+    background: url("../img/about/xiao1.jpg") no-repeat;
+    background-size:100% 100%;
+}
+
+.single-team-member .img-box .xiao2{
+    background: url("../img/about/xiao2.jpg") no-repeat;
+    background-size:100% 100%;
+}
+
+.single-team-member .img-box .xiao3{
+    background: url("../img/about/xiao3.jpg") no-repeat;
+    background-size:100% 100%;
+}
+
+/*资质荣誉*/
+.achive{
+    background:rgb(247,247,247);
+    padding: 50px 0 50px;
+}
+.sec-padd{
+
+}
+.achive-carousel .honor{
+    height:160px;
+    padding:20px;
+    background:#ff9;
+    border:1px solid #000;
+    -webkit-box-shadow: inset 0 0 10px #000;
+    -moz-box-shadow: inset 0 0 10px #000;
+    box-shadow: inset 0 0 10px #000;
+}

@@ -73,9 +73,9 @@
 	}
 
 	.menuzord-responsive.menuzord {
-	    /*padding: 0 15px;*/
+	    /*padding: 0 27px;*/
 	    /*background: rgba(255,255,255,0);*/
-		background-color: rgb(40,40,48);
+        background-color: rgb(40,40,48);
 	    min-height: 66px;
 	}
 	.menuzord .showhide {

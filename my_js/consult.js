@@ -1,3 +1,4 @@
+/*** Created by Administrator on 2017/7/18.*/
 
 // logo大小控制
 function logo() {
@@ -43,33 +44,39 @@ function nav() {
 }
 nav()
 
+$(function(){
+    $(".service-style3 .item").hide();
+    $(".section-title0,.section-title1,.section-title2").hide();
+    $(".our-team article").hide();
+    $(window).scroll(function(){
+        var top = $(this).scrollTop();
+        console.log(top);
+        if(top>540){
+            $(".service-style3 .section-title0").show();
+            $(".service-style3 .section-title0").addClass("animated fadeInRightBig");
+        }
+        if(top>660){
+            $(".service-style3 .item").show();
+            $(".service-style3 .item").addClass("animated bounceInDown");
+        }
+        if(top>960){
+            $(".our-team .section-title1").show();
+            $(".our-team .section-title1").addClass("animated rollIn");
+        }
+        if(top>1074){
+            $(".our-team article").show();
+            $(".our-team .article0").addClass("animated bounceInLeft");
+            $(".our-team .article1").addClass("animated bounceInDown");
+            $(".our-team .article2").addClass("animated bounceInRight");
+        }
+        if(top>1550){
+            $(".achive .section-title2").show();
+            $(".achive .section-title2").addClass("animated bounceIn");
+        }
+    });
+});
 
 $(window).resize(function () {
-    logo()  // logo大小控制
+    logo()
     nav()
 })
-
-// 地图
-function init(){
-    var center=new qq.maps.LatLng(30.5688900000,104.0633000000);
-    var map=new qq.maps.Map(document.getElementById("map"),{
-        center:center,
-        zoom:16
-    });
-    var label = new qq.maps.Label({
-        position: center,
-        map: map,
-        content:'三策科技',
-        style:{color:"red",borderRadius:"2px",borderColor:"red"}
-    });
-    //添加定时器
-    setTimeout(function(){
-        var marker=new qq.maps.Marker({
-            position:center,
-            animation:qq.maps.MarkerAnimation.DROP,
-            map:map
-        });
-        // marker.setAnimation(qq.maps.Animation.DROP);
-    },2000);
-}
-window.onload=init;

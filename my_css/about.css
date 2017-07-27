@@ -81,50 +81,91 @@ header {
     display: block;
 }
 
-.default-section .jianjie{
-    font-size:18px;
-    color:#333;
-    padding:0 0 10px 0;
+/*底层背景图*/
+.top-bgimg {
+    width: 100%;
+    height: 400px;
+    background-image: url("../img/bgimg/contact.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-/*产业合作*/
-.
-
-
-/*校企合作*/
-.single-team-member{
-    width:100%;
+.cover-top-bgimg {
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0,0,0,.4);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align:center;
 }
 
-.single-team-member .img-box .xiao1{
-    background: url("../img/about/xiao1.jpg") no-repeat;
-    background-size:100% 100%;
+.cover-top-bgimg p {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 600;
+    padding-top: 200px;
 }
 
-.single-team-member .img-box .xiao2{
-    background: url("../img/about/xiao2.jpg") no-repeat;
-    background-size:100% 100%;
+/*联系方式*/
+.contact_us {
+    margin-top: 50px;
 }
 
-.single-team-member .img-box .xiao3{
-    background: url("../img/about/xiao3.jpg") no-repeat;
-    background-size:100% 100%;
+.inform-box {
+    height: 488px;
+    background-color: #e9dfd1;
+    padding: 0;
+    margin-bottom: 40px;
 }
 
-/*资质荣誉*/
-.achive{
-    background:rgb(247,247,247);
-    padding: 50px 0 50px;
+/*公司title*/
+.company-title {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
-.sec-padd{
 
+.company-title span {
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;;
+    text-transform: uppercase;
+    color: #f1ebe5;
+    padding-left: 70px;
+    text-shadow: 0 8px 9px #666, 0 -2px 1px #fff;
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: -4px;
+    text-align: center;
+    background: linear-gradient(to bottom, #ece4d9 0%,#e9dfd1 100%);
 }
-.achive-carousel .honor{
-    height:160px;
-    padding:20px;
-    background:#ff9;
-    border:1px solid #000;
-    -webkit-box-shadow: inset 0 0 10px #000;
-    -moz-box-shadow: inset 0 0 10px #000;
-    box-shadow: inset 0 0 10px #000;
+
+.company-info {
+    margin-top: 40px;
+}
+
+.company-info p{
+    color: grey;
+    margin-bottom: 20px;
+    padding-left: 70px;
+}
+
+/*about company*/
+.about-company {
+    margin-top: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+/*map冲突解决*/
+.baidu-maps label {
+    max-width: none;
+}
+
+.baidu-maps input {
+    margin-right: 0 !important;
+    display: inline;
 }

@@ -2,7 +2,7 @@
 header {
     width: 100%;
     margin: auto;
-    background-color: transparent;
+    background-color: rgb(40,40,48);
     z-index: 1001;
     position: relative;
 }
@@ -19,7 +19,7 @@ header {
 }
 /*导航栏选项居右*/
 .nav {
-    background-color: transparent;
+    background-color: rgb(40,40,48);
 }
 
 .nav li a {
@@ -39,7 +39,7 @@ header {
 
 .subservice-nav {
     width: 140px;
-    background-color: rgba(40,40,48,.7);
+    background-color: rgb(40,40,48);
     display: none;
     position: absolute;
 }
@@ -62,23 +62,61 @@ header {
     display: block;
 }
 
+.subservice-nav:hover .service-nav a {
+    color: #0B90C4 !important;
+}
+
 /*展子导航栏*/
-.zhan-nav {
-    width: 140px;
-    background-color: rgba(40,40,48,.7);
+.wisdom-nav, .zhan-nav, .ce-nav, .educate-nav {
+    width: 180px;
+    background-color: rgb(40,40,48);
     border-left: 1px solid rgb(40,40,48);
     text-align: center;
     display: none;
+}
+
+.wisdom-nav {
+    position: absolute;
+    top: 0;
+    left: 140px;
+}
+
+.zhan-nav {
     position: absolute;
     top: 51px;
     left: 140px;
 }
 
-.zhan-nav li a {
+.ce-nav {
+    position: absolute;
+    top: 101px;
+    left: 140px;
+}
+
+.educate-nav {
+    position: absolute;
+    top: 51px;
+    left: 140px;
+}
+
+.wisdom-nav li a, .zhan-nav li a, .ce-nav li a, .educate-nav li a {
+    font-size: 14px;
     padding-left: 0;
 }
 
+.wisdom:hover .wisdom-nav {
+    display: block;
+}
+
 .zhan:hover .zhan-nav{
+    display: block;
+}
+
+.ce:hover .ce-nav {
+    display: block;
+}
+
+.educate:hover .educate-nav {
     display: block;
 }
 
@@ -201,82 +239,6 @@ header {
     padding: 20px 0 10px;
     font-size: 18px;
     color: #000;
-}
-
-/*提供服务icon颜色*/
-.fa-angle-left, .fa-angle-right {
-    color: #fff;
-}
-
-
-/*虚拟现实*/
-/*title*/
-.vr-title h2 {
-    border-top: 1px solid gainsboro;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 20px;
-}
-
-/*img*/
-.vr-mul {
-    padding: 0;
-    height: 280px;
-}
-
-.mul-img1 {
-    background: url("../img/bgimg/vr.jpg") no-repeat;
-    background-size: cover;
-    cursor: pointer;
-}
-
-.mul-img2 {
-    background: url("../img/bgimg/ar.jpg") no-repeat;
-    background-size:cover;
-    cursor: pointer;
-}
-
-.mul-img3 {
-    background: url("../img/bgimg/mr.jpg") no-repeat;
-    background-size:cover;
-    cursor: pointer;
-}
-
-/*图片覆盖层*/
-.cover-mul{
-    text-align: center;
-    position: absolute;
-    padding: 0;
-    background-color: rgba(0,0,0,.5);
-    opacity: 0;
-}
-
-/*图片覆盖层文字*/
-.cover-mul h3 {
-    color: #fff;
-    line-height:280px;
-}
-
-/*背景色覆盖层*/
-.sub-cover-mul1, .sub-cover-mul2, .sub-cover-mul3 {
-    height: 280px;
-    position: absolute;
-    padding: 0;
-    background-color: rgba(0,0,0,.5);
-}
-
-/*背景色覆盖层title*/
-.sub-cover-mul1>h3, .sub-cover-mul2>h3, .sub-cover-mul3>h3 {
-    color: #fff;
-    padding: 15px 30px 10px;
-}
-
-.cover-text1, .cover-text2, .cover-text3 {
-    padding: 0 30px 0;
-}
-
-.cover-text1 h4, .cover-text2 h4 {
-    padding-bottom: 10px;
 }
 
 /*联系方式版块*/
